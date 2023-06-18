@@ -1,0 +1,22 @@
+<h1>保存できました</h1>
+イフの条件にするとトゥルー・フォルスを返す
+・セーブ
+・クリエイト
+・アップデート
+
+
+<table>
+  <tr>
+    <th>ユーザー名</th>
+    <th>タイトル</th>
+    <th>内容</th>
+  </tr>
+  <% @blogs.each do |blog| %>
+    <tr>
+      <td><%= blog.user.name %></td>
+      <td><%= blog.title %></td>
+      <td><%= blog.content %></td>
+    </tr>
+  <% end %>
+
+</table>
